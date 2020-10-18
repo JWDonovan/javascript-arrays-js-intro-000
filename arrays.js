@@ -5,11 +5,11 @@ function addElementToBeginningOfArray(array, element) {
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  array.push(element);
+  array = [element, array...];
 }
 
 function addElementToEndOfArray(array, element) {
-  array.push(element);
+  let arr = [array..., element]
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
@@ -21,11 +21,11 @@ function accessElementInArray(array, index) {
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-  let arr = array.splice(1);
+  array.splice(1);
 }
 
 function removeElementFromBeginningOfArray(array) {
-  array.splice(1);
+  let arr = array.splice(1);
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
